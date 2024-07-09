@@ -1,9 +1,6 @@
 <template>
   <div>
-    <sdPageHeader
-      class="ninjadash-page-header-main"
-      title="Alerts"
-    >
+    <sdPageHeader class="ninjadash-page-header-main" title="Alerts">
     </sdPageHeader>
     <Main>
       <a-row :gutter="25">
@@ -53,14 +50,16 @@
                   description="Success Tips"
                   type="success"
                 />
+
                 <sdAlerts
-                  :outlined="false"
-                  :closable="false"
+                  :outlined="true"
+                  :closable="true"
                   :showIcon="true"
                   message=""
                   description="Informational Notes"
                   type="info"
                 />
+
                 <sdAlerts
                   :outlined="false"
                   :closable="false"
